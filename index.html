@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy 22nd Birthday, Moumita! 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🎂 Moumita's 22nd Birthday 💖</h1>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome-section">
+        <div class="welcome-container">
+            <div class="floating-hearts">
+                <span class="heart">❤️</span>
+                <span class="heart">💕</span>
+                <span class="heart">💖</span>
+                <span class="heart">💗</span>
+                <span class="heart">💝</span>
+            </div>
+            <h1 class="welcome-title">Happy 22nd Birthday, Moumita! 🎉</h1>
+            <p class="welcome-subtitle">Today we celebrate not just your birthday, but the wonderful person you have become.</p>
+            <p class="welcome-message">May your smile always shine as brightly as it does today. ✨</p>
+            <button class="btn-scroll" onclick="scrollToGallery()">Scroll to Memories ⬇️</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">📸 Memories Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-wrapper">
+                <div class="gallery-slide active">
+                    <img src="https://via.placeholder.com/500x400?text=Memory+1" alt="Memory 1" class="gallery-img">
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://via.placeholder.com/500x400?text=Memory+2" alt="Memory 2" class="gallery-img">
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://via.placeholder.com/500x400?text=Memory+3" alt="Memory 3" class="gallery-img">
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://via.placeholder.com/500x400?text=Memory+4" alt="Memory 4" class="gallery-img">
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://via.placeholder.com/500x400?text=Memory+5" alt="Memory 5" class="gallery-img">
+                </div>
+            </div>
+            <button class="gallery-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="gallery-btn next" onclick="changeSlide(1)">❯</button>
+            <div class="gallery-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Letter Section -->
+    <section id="letter" class="letter-section">
+        <h2 class="section-title">💌 Letter from Your Brother</h2>
+        <div class="letter-container">
+            <div class="letter-box">
+                <p class="letter-greeting">Dear Moumita,</p>
+                <p class="letter-text"><strong>Happy 22nd Birthday! 🎂</strong></p>
+                <p class="letter-text">Watching you grow from a little girl into such a kind, confident, and beautiful young woman has been one of the greatest joys of my life.</p>
+                <p class="letter-text">No matter where life takes us, you'll always be my little sister. I hope this year brings you happiness, success, good health, and countless beautiful memories.</p>
+                <p class="letter-text">Keep smiling, keep dreaming, and never stop believing in yourself.</p>
+                <p class="letter-text"><strong>I am always proud of you.</strong></p>
+                <p class="letter-text"><strong>Happy Birthday once again!</strong></p>
+                <p class="letter-signature">With lots of love,<br>Your brother, Bikash ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 22 Wishes Section -->
+    <section id="wishes" class="wishes-section">
+        <h2 class="section-title">✨ 22 Wishes for 22 Years</h2>
+        <p class="wishes-subtitle">Tap on each wish to reveal it! 💫</p>
+        <div class="wishes-container">
+            <div class="wishes-display">
+                <div class="wish-card" id="wishDisplay">
+                    <p id="wishText">Click below to see the first wish!</p>
+                </div>
+            </div>
+            <div class="wishes-buttons">
+                <button class="wish-btn" onclick="showWish(0)">1️⃣ Happiness</button>
+                <button class="wish-btn" onclick="showWish(1)">2️⃣ Good Health</button>
+                <button class="wish-btn" onclick="showWish(2)">3️⃣ Success</button>
+                <button class="wish-btn" onclick="showWish(3)">4️⃣ Peace</button>
+                <button class="wish-btn" onclick="showWish(4)">5️⃣ Confidence</button>
+                <button class="wish-btn" onclick="showWish(5)">6️⃣ Adventures</button>
+                <button class="wish-btn" onclick="showWish(6)">7️⃣ True Friendships</button>
+                <button class="wish-btn" onclick="showWish(7)">8️⃣ Endless Smiles</button>
+                <button class="wish-btn" onclick="showWish(8)">9️⃣ Family Love</button>
+                <button class="wish-btn" onclick="showWish(9)">🔟 Dreams Fulfilled</button>
+                <button class="wish-btn" onclick="showWish(10)">1️⃣1️⃣ Strength</button>
+                <button class="wish-btn" onclick="showWish(11)">1️⃣2️⃣ Courage</button>
+                <button class="wish-btn" onclick="showWish(12)">1️⃣3️⃣ Love</button>
+                <button class="wish-btn" onclick="showWish(13)">1️⃣4️⃣ Growth</button>
+                <button class="wish-btn" onclick="showWish(14)">1️⃣5️⃣ Laughter</button>
+                <button class="wish-btn" onclick="showWish(15)">1️⃣6️⃣ Gratitude</button>
+                <button class="wish-btn" onclick="showWish(16)">1️⃣7️⃣ Joy</button>
+                <button class="wish-btn" onclick="showWish(17)">1️⃣8️⃣ Wisdom</button>
+                <button class="wish-btn" onclick="showWish(18)">1️⃣9️⃣ Kindness</button>
+                <button class="wish-btn" onclick="showWish(19)">2️⃣0️⃣ Purpose</button>
+                <button class="wish-btn" onclick="showWish(20)">2️⃣1️⃣ Magic</button>
+                <button class="wish-btn" onclick="showWish(21)">2️⃣2️⃣ Forever Smile</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surprise Section -->
+    <section id="surprise" class="surprise-section">
+        <h2 class="section-title">🎁 A Special Surprise</h2>
+        <button class="surprise-btn" onclick="triggerSurprise()">🎁 Click Here for a Surprise! 🎉</button>
+        <div id="confetti" class="confetti-container"></div>
+        <div id="surpriseMessage" class="surprise-message hidden">
+            <div class="cake-animation">🎂</div>
+            <h3>You will always be my little sister.</h3>
+            <p>Happy Birthday! ❤️</p>
+        </div>
+    </section>
+
+    <!-- Final Screen -->
+    <section id="final" class="final-section">
+        <h1 class="final-title">Once Again...</h1>
+        <h2 class="final-subtitle">Happy 22nd Birthday<br>Moumita ❤️</h2>
+        <p class="final-credit">Made with Love<br>by<br>Your Brother, Bikash 💕</p>
+        <div class="final-balloons">
+            <span class="balloon balloon-1">🎈</span>
+            <span class="balloon balloon-2">🎈</span>
+            <span class="balloon balloon-3">🎈</span>
+            <span class="balloon balloon-4">🎈</span>
+            <span class="balloon balloon-5">🎈</span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
