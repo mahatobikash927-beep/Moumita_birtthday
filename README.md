@@ -37,6 +37,7 @@ A beautiful, interactive birthday website created with love for Moumita's 22nd b
 To add your own photos to the gallery:
 1. Replace the placeholder image URLs in the gallery section
 2. Or upload images to a cloud service and link them
+3. ![image alt](https://github.com/mahatobikash927-beep/Moumita_birtthday/blob/90b12ea63b800fdb60e84fdf16dbddba36ee70db/IMG-20260712-WA0000.jpg)
 
 ## 🎉 Made with Love
 
